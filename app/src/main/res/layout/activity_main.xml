@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/main_view"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -13,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/light_gray"
-        android:text="@string/header"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:text="@string/header" />
 
     <ScrollView
         android:id="@+id/question_list"
@@ -25,55 +24,300 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="8dp">
 
+            <!--region question 01-->
             <TextView
-                android:text="How is COVID-19 passed on?"
-                android:textSize="24sp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/question_01"
+                android:textSize="24sp" />
 
             <RadioGroup
                 android:id="@+id/question_01_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Through droplets that come from your mouth and nose when you cough or breathe out." />
+                    android:text="@string/question_01_option_01" />
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="In sexual fluids, including semen, vaginal fluids or anal mucous." />
+                    android:text="@string/question_01_option_02" />
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="By drinking unclean water." />
+                    android:text="@string/question_01_option_03" />
+
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="All of the above." />
+                    android:text="@string/all_of_the_above" />
             </RadioGroup>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_marginBottom="16dp"
                 android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
                 android:background="@color/black" />
+            <!--endregion question 01-->
+
+            <!--region question 02-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_02"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/question_02_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_02_option_01" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_02_option_02" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_02_option_03" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_of_the_above" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black" />
+            <!--endregion question 02-->
+
+            <!--region question 03-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_03"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/question_03_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_03_option_01" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_03_option_02" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_03_option_03" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black" />
+            <!--endregion question 03-->
+
+            <!--region question 04-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_04"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/question_04_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="#"
+                android:inputType="number"
+                tools:ignore="LabelFor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black" />
+            <!--endregion question 04-->
+
+            <!--region question 05-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_05"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/question_05_checkBox_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_05_option_01" />
+
+            <CheckBox
+                android:id="@+id/question_05_checkBox_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_05_option_02" />
+
+            <CheckBox
+                android:id="@+id/question_05_checkBox_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_05_option_03" />
+
+            <CheckBox
+                android:id="@+id/question_05_checkBox_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_05_option_04" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black" />
+            <!--endregion question 05-->
+
+            <!--region question 06-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_06"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/question_06_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/true_" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/false_" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black" />
+            <!--endregion question 06-->
+
+            <!--region question 07-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_07"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/question_07_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_07_option_01" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_07_option_02" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_07_option_03" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_of_the_above" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black" />
+            <!--endregion question 07-->
+
+            <!--region question 08-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_08"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/question_08_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_08_option_01" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_08_option_02" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_08_option_03" />
+            </RadioGroup>
+            <!--endregion question 04-->
 
         </LinearLayout>
-
     </ScrollView>
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:text="@string/submit" />
 
 </RelativeLayout>

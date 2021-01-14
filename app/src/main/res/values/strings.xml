@@ -1,5 +1,35 @@
 <resources>
     <string name="app_name">COVID-19 Quiz</string>
     <string name="header">Take this quiz to see if you have got all the right information about COVID-19.</string>
-    <string name="submit">Submit</string>
+    <string name="submit">Check answers</string>
+    <string name="question_01">1. How is COVID-19 passed on?</string>
+    <string name="question_01_option_01">Through droplets that come from your mouth and nose when you cough or breathe out.</string>
+    <string name="question_01_option_02">In sexual fluids, including semen, vaginal fluids or anal mucous.</string>
+    <string name="question_01_option_03">By drinking unclean water.</string>
+    <string name="all_of_the_above">All of the above.</string>
+    <string name="question_02">2. What are the common symptoms of COVID-19?</string>
+    <string name="question_02_option_01">A new and continuous cough.</string>
+    <string name="question_02_option_02">Fever.</string>
+    <string name="question_02_option_03">Tiredness.</string>
+    <string name="question_03">3. Can you always tell if someone has COVID-19? ?</string>
+    <string name="question_03_option_01">No – not everyone with COVID-19 has symptoms.</string>
+    <string name="question_03_option_02">Yes – it will be obvious, a person with COVID-19 coughs a lot.</string>
+    <string name="question_03_option_03">Yes – you can tell just by where a person comes from, their race and ethnicity.</string>
+    <string name="question_04">4. You should regularly wash your hands with soap and water for at least how many seconds?</string>
+    <string name="question_05">5. Which of the following people is COVID-19 more dangerous for? (select all correct responses)</string>
+    <string name="question_05_option_01">Children.</string>
+    <string name="question_05_option_02">Older people – especially those aged 70 and above.</string>
+    <string name="question_05_option_03">People with certain underlying health conditions.</string>
+    <string name="question_05_option_04">European people.</string>
+    <string name="question_06">6. True or False: A vaccine stimulates your immune system to produce antibodies, like it would if you were exposed to the virus.</string>
+    <string name="true_">True.</string>
+    <string name="false_">False.</string>
+    <string name="question_07">7. When should fabric face masks be worn?</string>
+    <string name="question_07_option_01">On public transport.</string>
+    <string name="question_07_option_02">In confined or crowded spaces.</string>
+    <string name="question_07_option_03">In small shops.</string>
+    <string name="question_08">8. Can COVID-19 be cured?</string>
+    <string name="question_08_option_01">Yes – Hot drinks can cure COVID-19.</string>
+    <string name="question_08_option_02">No – COVID-19 is a death sentence.</string>
+    <string name="question_08_option_03">No – but most people get better by themselves.</string>
 </resources>
