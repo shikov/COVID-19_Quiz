@@ -16,7 +16,7 @@
         android:text="@string/header"
         android:padding="16dp" />
 
-    <ListView
+    <ScrollView
         android:id="@+id/question_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +24,50 @@
         android:layout_below="@+id/header"
         android:orientation="vertical">
 
-    </ListView>
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="How is COVID-19 passed on?"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/question_01_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Through droplets that come from your mouth and nose when you cough or breathe out." />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In sexual fluids, including semen, vaginal fluids or anal mucous." />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="By drinking unclean water." />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All of the above." />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <Button
         android:id="@+id/submit"
