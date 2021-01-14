@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         // check question 4 answer
         EditText editText = findViewById(R.id.question_04_answer);
-        if (editText.getText().toString().equals("20")) score++;
+        if (editText.getText().toString().trim().equals("20")) score++;
 
         // check question 5 answer
         CheckBox checkBox01 = findViewById(R.id.question_05_checkBox_01);
@@ -79,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
         if (idx == 2) score++;
 
         // show result
-        Toast.makeText(getApplicationContext(), "Your score: " + score + "/8", Toast.LENGTH_SHORT).show();
+        if (score == 0)
+            Toast.makeText(getApplicationContext(), "No correct answer!", Toast.LENGTH_SHORT).show();
+        else if (score < 8)
+            Toast.makeText(getApplicationContext(), "Your score: " + score + "/8", Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(getApplicationContext(), "Well done, you got it all!", Toast.LENGTH_SHORT).show();
     }
 }
